@@ -1,0 +1,28 @@
+{
+  "name": "simpletheme",
+  "version": "0.0.1",
+  "description": "Simple theme for Hexo",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-renderer-ejs": "^0.3.1",
+    "hexo-renderer-marked": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitHber/simple-theme.git"
+  },
+  "keywords": [
+    "Simple",
+    "Three Column",
+    "Jian Shu",
+    "Hexo"
+  ],
+  "bugs": {
+    "url": "https://github.com/gitHber/simple-theme/issues"
+  },
+  "author": {
+    "name": "月肃生",
+    "url": "https://githber.github.io/",
+    "email": "1617455243@qq.com"
+  }
+}
