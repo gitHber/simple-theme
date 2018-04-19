@@ -19,8 +19,12 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
         Disqus.</a></noscript>
 <% } else if (theme.gitment.enable) { %>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<!-- 英文 -->
+<!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+<!-- 汉化 映入css，js -->
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
 <div id="gitment-container"></div>
 <script type="text/javascript">
     const myTheme = {
@@ -35,8 +39,16 @@
             return container
         },
     }
+    let href = document.location.href.split('/')
+    let title = href[href.length - 1] 
+    String.prototype.getLength = function(){
+        return this.replace(/[^\x00-\xff]/g, 'aa').length
+    }
+    if(title.getLength() > 50){
+        alert('文章标题超出50字符，无法完成初始化!')
+    }
     var gitment = new Gitment({
-        id: document.location.href,
+        id: title,
         owner: '<%= theme.gitment.githubID %>',
         repo: '<%= theme.gitment.repo %>',
         oauth: {
