@@ -4,7 +4,7 @@ shortName: 文
 
 
 # full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
-fullHttps: false
+fullHttps: true
 
 # favicon
 favicon: /images/favicon.png
@@ -28,7 +28,7 @@ siteBuildingTime: 01/20/2018
 ## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
 menu:
   前端: front
-  后台: server-side
+  后台: server
   大数据: big-data
   其他: other
   资源: resource
@@ -64,16 +64,16 @@ pageServerUrl: https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f72
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: false
-  githubID:
-  repo:
-  ClientID:
-  ClientSecret:
-  lazy: true
+  enable: true
+  githubID: gitHber
+  repo: githber-comments
+  ClientID: 0e03c79c74d359332c6d
+  ClientSecret: 8d412d0b0fa2be9f78dca756e16a0c69331a0e6e
+  lazy: false
 
 ## Comments settings.You can choose only ONE to display.
 # disqus shortName,
 disqus_shortname:
 
 # Analytics
-tentcentAnalyticsId:
+tentcentAnalyticsId: 65725085
